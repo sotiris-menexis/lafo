@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'AC-5yearsold_unicode';
+  src: local('AC-5yearsold_unicode'), url('./fonts/AC-5yearsold_unicode.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CenturyGothic';
+  src: local('CenturyGothic'), url('./fonts/CenturyGothic.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PepperHands-Regular';
+  src: local('PepperHands-Regular'), url('./fonts/PepperHands-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'VAG-HandWritten';
+  src: local('VAG-HandWritten'), url('./fonts/VAG-HandWritten.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.edit-btn {
+  position: absolute;
+  right: -100px;
+  top: 0;
+  z-index: 1500;
+}
+
+.ant-btn {
+  color: #4096ff;
+}
+
+.section-title {
+  &.vertical {
+    transform: rotate(-90deg);
+    height: fit-content;
+    width: fit-content;
+  }
+}
+.ant-modal-root {
+  z-index: 10000;
+}
